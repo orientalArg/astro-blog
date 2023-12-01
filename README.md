@@ -72,6 +72,6 @@ Get into the [Discord Server](https://astro.build/chat), people are very active 
 
 Follow Astro build on [Twitter](https://twitter.com/astrodotbuild) to be aware of the news.
 
-## For blog administration look at the [Nina + Astro](https://tina.io/docs/frameworks/astro/) documentation
+## For blog administration look at the [Tina + Astro](https://tina.io/docs/frameworks/astro/) documentation
 
-Nina is a very easy to set up `Headless CMS` wich is usually use as admin panel for `Markdown` files, if you know a little bit about JS OOP it'll be very easy to taloring.
+Tina is a very easy to set up `Headless CMS` wich is usually use as admin panel for `Markdown` files, if you know a little bit about JS OOP it'll be very easy to taloring.
