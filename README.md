@@ -74,4 +74,4 @@ Follow Astro build on [Twitter](https://twitter.com/astrodotbuild) to be aware o
 
 ## For blog administration look at the [Tina + Astro](https://tina.io/docs/frameworks/astro/) documentation
 
-Tina is a very easy to set up `Headless CMS` wich is usually use as admin panel for `Markdown` files, if you know a little bit about JS OOP it'll be very easy to taloring.
+Tina is a very easy to set up `Headless CMS` wich is usually use as admin panel for `Markdown` files, if you know a little bit about `JavaScript OOP` it'll be very easy to tailoring.
