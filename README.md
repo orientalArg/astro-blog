@@ -1,47 +1,76 @@
-# Astro Starter Kit: Minimal
+# 🇦🇷 **My First Astro Project - Blog**
+
+> Take a look at the [Production Demo](https://journeyblog.vercel.app/blog)
+
+## 💾 Initial Config:
 
 ```
-npm create astro@latest -- --template minimal
+> Minimal starter kit
+> Typescript base
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+Inside my Astro project, you'll see the following folders and files:
+
 
 ```
 /
 ├── public/
+│    └── images/
+│    └── stack/
+├── data/
+│    └── navData.js
+│    └── siteData.js
+├── js/
+│    └── nav.js
+│    └── jsonLD.js
+│    └── utils.js
 ├── src/
-│   └── pages/
-│       └── index.astro
+│    └─ components/
+│         └── nav.astro
+│         └── aside.astro
+│         └── categoryCloud.astro
+│         └── postHeader.astro
+│         └── postBody.astro
+│         └── postShare.astro
+│         └── pagination.astro
+│         └── footer.astro
+|────── layouts/
+│         └── MainLayout.astro
+│         └── CardLayout.astro
+│         └── PostLayout.astro
+|────── pages/
+│         └── index.astro
+│         └── about.astro
+│         └── contact.astro
+│         └── 404.astro
+│         └── blog.astro
+|────── styles/
+│         └── global.scss
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 🧞 How i make this project
+> Characteristics of this project 
 
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
+| Characteristic            | Description                                      |
 | :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `styles`                  | All styles are written in `scss` syntax whitin the `astro` files except the `global` styles file. > npm install sass |
+| `routing`                 | Astro includes it's own `routing` api based on folder structure |
+| `SEO`                     | All `SEO` and `OG:` structure is based on [Coding In Public](https://www.youtube.com/@CodinginPublic/) scripts. He is one of many Astro project's "embassador", I highly recommend to follow him |
 
-## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 🤓 Want to learn more?
+
+Look at the official [Documentation](https://docs.astro.build) 
+
+Get into the [Discord Server](https://astro.build/chat), people are very active there.
+
+Follow Astro build on [Twitter](https://twitter.com/astrodotbuild) to be aware of the news.
+
+## For blog administration look at the [Nina + Astro](https://tina.io/docs/frameworks/astro/) documentation
+
+Nina is a very easy to set up `Headless CMS` wich is usually use as admin panel for `Markdown` files, if you know a little bit about JS OOP it'll be very easy to taloring.
