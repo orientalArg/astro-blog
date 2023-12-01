@@ -1,4 +1,5 @@
-# 🇦🇷 **My First Astro Project - Blog**
+## 🇦🇷 **My First Astro Project**
+Astro Blog
 
 > Take a look at the [Production Demo](https://journeyblog.vercel.app/blog)
 
