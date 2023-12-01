@@ -1,0 +1,9 @@
+post
+get
+edit / update
+delete
+
+Create
+Read
+Update
+Delete

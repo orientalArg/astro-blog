@@ -1,0 +1,40 @@
+---
+import MainHead from './MainHead.astro';
+import Footer from '../components/footer.astro'
+import Nav from '../components/nav.astro'
+
+import "../styles/global.css";
+
+const {
+	title = "Blog",
+	description = "The Jamstack blog",
+	image,
+	frontmatter,
+	robots,
+} = Astro.props;
+---
+<html lang="en" {title} >
+	<MainHead {title} {description} {image} {frontmatter} />
+	<body >
+		<Nav />
+		<main >
+			<slot></slot>
+		</main>
+		<Footer/>
+    </body>
+</html>
+
+<style>
+	main {
+		display: flex;
+		justify-content: center;
+		flex-direction: row-reverse;
+	}
+	@media (max-width:850px) {
+		main {
+			margin: 0;
+			padding: 0;
+			flex-direction: column;
+		}
+	}
+</style>

@@ -1,0 +1,58 @@
+---
+import { formatBlogPosts, toSlug } from "../js/utils";
+
+const allPosts = await Astro.glob("../pages/blog/*.md");
+const formattedPosts = formatBlogPosts(allPosts);
+const allCategories = formattedPosts.map((cat) => cat.frontmatter.category.toLowerCase()).flat();
+const processedCategories = allCategories.reduce((acc,category ) => {
+    const value  = acc[category];
+    return {
+        ...acc,
+        [category]: value
+    }
+}, {})
+
+const { author, authorImage } = Astro.props;
+---
+
+<aside style="padding-top: 5em;">
+    <div style="display: flex;align-items:center;gap:1em;">
+        <img style="border-radius: 50%;height:4em;" src={authorImage } alt={author} />
+        <a href=`/author/${toSlug(author)}` class="title" style="height: fit-content;">{author}</a>
+    </div>
+    <h3>Categories</h3>
+    <nav class="tags-nav">
+    {
+    Object.entries(processedCategories).map(([key]) => (
+        <h3>
+            <a href={`/category/${toSlug(key)}/`} class="button">
+                <img style="height:1em;" src="https://svgsilh.com/svg/35797-ffffff.svg" alt="price tag img">
+                {key}
+            </a>
+        </h3>
+    ))
+    }
+    </nav>
+</aside>
+
+<style lang="scss">
+aside {
+    padding: 1em;
+    min-width: 250px;
+    h3 { 
+        margin-top: 1em;
+        margin-bottom: .5em;
+    }
+    .tags-nav {
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        a {
+            height: 2em;
+            overflow: hidden;
+            font-size: .7em; 
+            margin-right: 1em;
+        }
+    }
+}
+</style>

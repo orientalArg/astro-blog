@@ -1,0 +1,81 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="About Me">
+<section>
+    <div class="bio">
+        <img class="me" src="/images/me.png" alt="myself"/>
+        <h1>Hi, I'm Joaquín Reynoso</h1>
+        
+        <p>I'm a freelance <b>frontend developer</b>. I learned how to develop websites with <b>React</b> through online courses and Open Source projects from GitHub.</p>
+        <p>
+            I have experience as a frontend developer, working in developers <b>teams</b> coding React components and as a freelancer coding <b>individual projects</b> like jamstack blogs, landing pages and other small projects.
+        </p>
+        <p>
+            If you are looking for a frontend developer to join your team or have a proposal you want to discuss, feel free to contact me and I will answer as soon as possible.
+        </p>
+    </div>
+    <table class="table" cellspacing="10" >
+        <tbody>
+            <tr><td><a href="https://joaquinreynoso.vercel.app/">My website</a></td>
+                <td><a href="https://www.upwork.com/freelancers/~0117753d45764f61bb">Upwork</a></td>
+            </tr>
+            <tr><td><a href="https://www.fiverr.com/joaquinreyno623">Fiverr</a></td>
+                <td><a href="mailto:orientalArg@outlook">Mail me</a></td>
+            </tr>
+            <tr><td><a href="https://www.github.com/orientalArg">Github</a></td>
+                <td><a href="https://www.figma.com/@orientalArg">Figma</a></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+</MainLayout>
+
+<style lang="scss" >
+section {
+    margin: 0 auto;
+    padding: 5em 1em;
+    .bio {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 650px;
+        a {
+            margin: 0;
+            color: #394357;
+            font-weight: 400;
+            text-decoration: underline dotted;
+            text-transform: lowercase;
+        }
+        a:hover {
+            color: red;
+        }
+        p{
+            font-size: 1.1em;
+            margin: .3em 0;
+            line-height: 1.4em;
+        }
+    }
+    .table {
+            margin: 0 auto;
+            margin-top: 2em;
+        td {
+            text-align: center;
+            width: 150px;
+            padding: .4em;
+            border: 2px #5473b6 solid;
+            border-style: dotted;
+        }
+        td {
+            a {
+                font-size: 1.2em;
+                color: #425a90; 
+            }
+        }
+    }
+}
+</style>

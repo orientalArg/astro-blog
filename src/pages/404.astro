@@ -1,0 +1,66 @@
+---
+import MainLayout from '../layouts/MainLayout.astro'
+---
+
+<MainLayout title="ERROR 404">
+    <section class="error">
+        <div class="content">
+            <div class="nuts">
+                <img class="_xl" src="https://cdn.icon-icons.com/icons2/1788/PNG/512/nuticon_114497.png" alt="">
+                <img class="_l" src="https://cdn.icon-icons.com/icons2/1788/PNG/512/nuticon_114497.png" alt="">
+                <h2><i>http error 404</i></h2>
+            </div><br/>
+            <div class="msj">
+                <h1>there's nothing here</h1>
+                <small>...maybe you mispelled something</small>
+            </div>
+            <div>
+                <h2><a href="/" class="button">Back to Home</a></h2>
+                <h2><a href="/blog" class="button">Go to Blog</a></h2>
+            </div>
+        </div>
+    </section>
+</MainLayout>
+
+<style lang="scss">
+    .error {
+        margin: 0 auto;
+        padding: 150px 0;
+        max-width: 450px;
+        min-height: 90vh;
+        .content {
+            text-align:center;
+            .nuts {
+                height: fit-content;
+                ._l { 
+                    max-width: 50px;
+                    animation: rotate 7s infinite linear;
+                }
+                ._xl { 
+                    max-width: 120px;
+                    animation: rotate_b 7s infinite linear;
+                }
+            }
+            .msj {
+                margin: 3em 0;
+                h1 { margin: 0;}
+            }
+        }
+    }
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(180deg);
+        }
+    }
+    @keyframes rotate_b {
+        from {
+            transform: rotate(-0deg);
+        }
+        to {
+            transform: rotate(-180deg);
+        }
+    }
+</style>

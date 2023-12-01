@@ -1,0 +1,25 @@
+---
+import { toSlug, formatDate } from "../js/utils";
+import '../styles/cardlayout.css'
+
+const {post} = Astro.props;
+
+const {title, description, image, category, author, date} = post.frontmatter;
+---
+<article class="card" >
+    <div class="card-img">
+        <div class="category">
+           <p><a href={`/category/${toSlug(category)}`}>{category}</a></p> 
+        </div>
+        <a href={post.url}><img src={image} alt={image}></a>
+    </div>
+    <div class="card-body">
+        <div>
+            <h2>{title}</h2>
+            <small>{formatDate(date)}</small>
+        </div>
+        <a href={`/author/${toSlug(author)}`} style="width:fit-content;color: #454545"><small>by {author}</small></a>
+        <p>{description}</p>
+        <h2><a href={post.url} class="button">read more</a></h2>
+    </div>
+</article>

@@ -1,0 +1,33 @@
+---
+const { prevUrl, nextUrl } = Astro.props;
+---
+<nav >
+    {
+        prevUrl && (
+            <a href={prevUrl}><img src="/images/arrow.svg" alt="arrow" style="rotate: 180deg;"> Previous</a>
+        )
+    }
+    {
+        nextUrl && (
+            <a href={nextUrl}>Next <img src="/images/arrow.svg" alt="arrow"></a>
+        )
+    }
+</nav>
+
+<style lang="scss">
+    nav {
+        a {
+            gap: .5em;
+            margin: 2em auto;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        width: 100px;
+        padding: .5em;
+        border-radius: .5em;
+        background: #2a68a2;
+            img {height: 1em;}
+        }
+    }
+</style>

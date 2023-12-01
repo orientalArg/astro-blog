@@ -1,0 +1,31 @@
+---
+import MainLayout from './MainLayout.astro';
+import Aside from '../components/aside.astro';
+
+import PostHeader from '../components/postHeader.astro';
+import PostBody from '../components/postBody.astro';
+import PostShare from '../components/postShare.astro';
+
+const { frontmatter } = Astro.props;
+
+const {title,image,description,category,date,author, authorImage} = frontmatter;
+
+---
+<MainLayout {title} {description}>
+    <Aside {author} {authorImage}/>
+    <section class="posts-wrapper" style="border: solid 2px #DDD;">
+        <PostHeader
+        {title}
+        {category}
+        {date}
+        {author}
+        />
+        <PostBody {image} {description} >
+            <slot></slot>
+            <div style="margin-top: 3em;">
+                <h2><a href="/blog" class="button"><img src="/images/arrow.svg" alt="arrow" style="rotate: 180deg;height:1em;"> back to blog</a></h2>
+            </div>
+        </PostBody>
+        <PostShare {category}/>
+    </section>
+</MainLayout>

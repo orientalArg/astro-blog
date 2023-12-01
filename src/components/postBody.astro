@@ -1,0 +1,31 @@
+---
+const {image,description} = Astro.props;
+
+---
+<frontmatter>
+    <div class="post-content">
+        <img src={image} alt={image}>
+        <div class="post-body">
+            <small>{description}</small>
+            <div class="body-content"> <slot></slot> </div>
+            <br/>
+            <br/>
+        </div>
+    </div>
+</frontmatter>
+
+<style lang="scss">
+    .post-content {
+        padding: 1em 0;
+        img { width: 100%; }
+        .post-body {
+            text-align: left;
+            line-height: 1.3em;
+            font-size: 1.2em;
+            small { color: #505050;}
+            .body-content {
+                margin-top: 2em;
+            }
+        }
+    }
+</style>

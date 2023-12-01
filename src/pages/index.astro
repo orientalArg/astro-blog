@@ -1,0 +1,79 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import CardLayout from '../layouts/CardLayout.astro';
+import { formatBlogPosts } from "../js/utils"
+
+const allPosts = await Astro.glob("../pages/blog/*.md")
+const formattedPosts = formatBlogPosts(allPosts, {
+    limit: 5,
+})
+
+---
+<section class="hero">
+    <img class="me" src="/images/me.png" alt="myself">
+    <div style="margin: 2em 0;">
+        <h1>My Journey</h1>
+        <small>As Js Developer</small>
+        <small>by <a href="/about" style="color: #87c5ff;">Joaquin Reynoso</a></small>
+        </div>
+    <div class="stack-bar">
+        <img src="/stack/next.svg" alt="next logo">
+        <img src="/stack/triple.png" alt="triple logo">
+        <img src="/stack/sass.svg" alt="sass logo">
+        <img src="/stack/figma.svg" alt="figma logo">
+        <img src="/stack/tailwind.svg" alt="tailwind logo">
+        <img src="/stack/react.svg" alt="react logo">
+        <img src="/stack/expressnode.svg" alt="expressnode logo">
+        <img src="/stack/mongodb.svg" alt="mongodb logo">
+        <img src="/stack/mysql.svg" alt="mysql logo">
+        <img src="/stack/astro-logo-dark.png" alt="astro-logo-dark logo">
+    </div>
+</section>
+<MainLayout title="welcome">
+    <div class="posts-wrapper">
+        <h1>Latest</h1>
+        {formattedPosts.map((post) => <CardLayout {post}/>)}
+        <h2 style="width:100px;margin: 0 auto"><a href="/blog" class="button">Go to Blog  <img src="/images/arrow.svg" alt="arrow" style="height: 1em"/></a></h2>
+    </div>
+</MainLayout>
+
+<style lang="scss">
+    .hero {
+        z-index: 10;
+        padding-top: 5em;
+        position: sticky;
+        text-align: center;
+        h1 { 
+            color: #fff;
+            margin: 0;
+        }
+        small, p { 
+            color: #e5e5e5;
+        }
+        .stack-bar {
+            margin-top: 2em;
+            background: #2a68a2;
+            display: flex;
+            overflow: scroll;
+            justify-content: center;
+            img {
+            margin: 1em;
+            height: 30px;
+            }
+        }
+    }
+    .hero::before {
+        top: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+        filter: blur(5px) grayscale(.5);
+        z-index: -20;
+        position: absolute;
+        background: url(https://media-public.canva.com/tmbQ8/MAELxOtmbQ8/1/tl.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+</style>

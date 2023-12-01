@@ -1,0 +1,29 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import CardLayout from '../../layouts/CardLayout.astro';
+
+import { formatBlogPosts } from "../../js/utils"
+import Pagination from '../../components/pagination.astro';
+import Aside from '../../components/aside.astro';
+
+export async function getStaticPaths({ paginate }) {
+    const allPosts = await Astro.glob("./*.md");
+    const formattedPosts = formatBlogPosts(allPosts);
+    return paginate(formattedPosts, {
+        pageSize: 4,
+    })
+}
+
+const { page } = Astro.props;
+const author = "";
+const authorImage = "";
+---
+<MainLayout title="Blog">
+    <Aside {author} {authorImage} />
+    <div class="posts-wrapper">
+        <h1 class="title">Articles</h1>
+        <small>Welcome to my blog, you can expect lots of articles about programming, conflicts, books and more. Hope you enjoy your visit.</small>
+        {page.data.map((post) => <CardLayout {post}/>)}
+        <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
+    </div>
+</MainLayout>

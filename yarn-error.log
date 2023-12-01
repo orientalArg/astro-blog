@@ -1,0 +1,53 @@
+Arguments: 
+  /home/diego/.nvm/versions/node/v20.6.1/bin/node /snap/node/7823/bin/yarn.js add @tinacms/auth
+
+PATH: 
+  /home/diego/.nvm/versions/node/v20.6.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/diego/.dotnet/tools:/home/diego/.dotnet/tools:/home/diego/.config/composer/vendor/bin:/home/diego/.config/composer/vendor/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.6.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/diego/.cache/yarn/v6/npm-monaco-editor-0.31.0-ec53566e40b612a96c0d54f77d37acef6d9dd70e-integrity/node_modules/monaco-editor/.yarn-metadata.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at /snap/node/7823/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/snap/node/7823/lib/cli.js:310:30)
+      at /snap/node/7823/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "",
+    "type": "module",
+    "version": "0.0.1",
+    "scripts": {
+      "dev": "astro dev",
+      "start": "astro dev",
+      "build": "astro build",
+      "preview": "astro preview",
+      "astro": "astro"
+    },
+    "dependencies": {
+      "@astrojs/image": "^0.17.3",
+      "astro": "^2.10.14",
+      "astro-icon": "^0.8.1",
+      "sass": "^1.66.1",
+      "tinacms": "^1.5.27"
+    },
+    "devDependencies": {
+      "@tinacms/cli": "^1.5.37",
+      "@types/node": "^20.10.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,0 +1,35 @@
+---
+import { formatBlogPosts, toSlug } from "../js/utils";
+import '../styles/aside.css'
+
+const allPosts = await Astro.glob("../pages/blog/*.md");
+const formattedPosts = formatBlogPosts(allPosts);
+const allCategories = formattedPosts.map((cat) => cat.frontmatter.category.toLowerCase()).flat();
+const processedCategories = allCategories.reduce((acc,category ) => {
+    const value  = acc[category];
+    return {
+        ...acc,
+        [category]: value
+    }
+}, {})
+
+const {author, authorImage } = Astro.props;
+---
+
+<aside>
+    <div class="author">
+        <img style="border-radius: 5em;max-height:4em;" src={authorImage } alt={author} />
+        <a href=`/author/${toSlug(author)}` class="title" style="height: fit-content;">{author}</a>
+    </div>
+    <h2>Tags Cloud</h2>
+    <nav class="tags-nav">
+        {
+        Object.entries(processedCategories).map(([key]) => (
+            <a href={`/category/${toSlug(key)}/`} class="button">
+                <img style="height:1em;" src="/images/label.svg" alt="Label">
+                {key}
+            </a>
+            ))
+        }
+    </nav>
+</aside>

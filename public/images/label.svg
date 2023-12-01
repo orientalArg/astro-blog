@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="256mm"
+   viewBox="0 0 210 256"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
+   sodipodi:docname="label.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="0.5946522"
+     inkscape:cx="72.311176"
+     inkscape:cy="585.21603"
+     inkscape:window-width="1680"
+     inkscape:window-height="974"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
+  <defs
+     id="defs2" />
+  <path
+     id="path195"
+     style="fill:#ffffff;fill-opacity:0.957637;stroke:none;stroke-width:2.74479;stroke-linecap:round;stroke-dasharray:65.8748, 65.8748;stroke-dashoffset:0;stroke-opacity:0.988824;paint-order:markers fill stroke"
+     d="M 8.7572984,3.9437188 4.0304536,102.5751 c -0.161486,4.98289 1.8699591,6.48088 3.1517046,8.98009 L 89.721838,254.96442 205.97862,187.74517 122.06107,41.441697 c -0.73631,-1.056918 -1.93911,-3.664727 -3.59478,-4.251653 L 11.774414,1.1618828 C 9.2088356,0.61241884 8.5979892,1.9135128 8.7572984,3.9437188 Z M 44.603428,37.186852 c 9.154397,-1.87e-4 16.575632,7.431669 16.575743,16.599465 -1.11e-4,9.167796 -7.421346,16.599652 -16.575743,16.599465 -9.154187,-1.11e-4 -16.575093,-7.43188 -16.575204,-16.599465 1.11e-4,-9.167585 7.421017,-16.599354 16.575204,-16.599465 z"
+     sodipodi:nodetypes="cccccccccccccc" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1" />
+</svg>

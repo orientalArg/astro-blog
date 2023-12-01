@@ -1,0 +1,15 @@
+---
+import {toSlug, formatDate} from '../js/utils'
+
+const {title, date, author} = Astro.props;
+---
+
+<frontmatter>
+    <div>
+        <h1>{title}</h1>
+        <nav>
+            <a style="color: #000000;" href={`/author/${toSlug(author)}`}>by {author}</a> 
+            <small>{formatDate(date)}</small>
+        </nav>
+    </div>
+</frontmatter>

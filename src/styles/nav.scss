@@ -1,0 +1,19 @@
+header {
+    width: 100%;
+    z-index: 20;
+    max-width: 1000px;
+    transform: translate(-50%, 40%);
+    position: fixed;
+    left: 50%;
+    top: 0;
+    nav {
+        margin: 0 .5em;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 3em;
+        background: #101010;
+        padding: .5em;
+    }
+
+}
