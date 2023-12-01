@@ -1,6 +1,5 @@
 ---
 import { formatBlogPosts, toSlug } from "../js/utils";
-import '../styles/aside.css'
 
 const allPosts = await Astro.glob("../pages/blog/*.md");
 const formattedPosts = formatBlogPosts(allPosts);
@@ -33,3 +32,33 @@ const {author, authorImage } = Astro.props;
         }
     </nav>
 </aside>
+
+<style lang="scss">
+    aside {
+    padding: 1em;
+    padding-top: 6em;
+    min-width: 250px;
+    .author {
+        gap:1em;
+        display: flex;
+        align-items:center;
+      }
+    .tags-nav {
+        display:flex;
+        margin: 1em 0;
+        flex-wrap: wrap;
+        align-items: center;
+        a {
+            height: 2em;
+            font-size: .7em; 
+            margin: .2em;
+        }
+    }
+}
+@media (min-width:850px) {
+    aside {max-width: 250px;}
+    .author{position: sticky;top: 130px;}
+    aside h2{position: sticky;top: 240px;}
+    .tags-nav {position: sticky;top: 280px;}
+}
+</style>
