@@ -1,20 +1,17 @@
-## 🇦🇷 **My First Astro Project**
+# **My First Astro Project**
 Astro Blog
 
 > Take a look at the [Production Demo](https://journeyblog.vercel.app/blog)
 
 ## 💾 Initial Config:
-
 ```
 > Minimal starter kit
 > Typescript base
 ```
 
 
-## 🚀 Project Structure
-
+# 🚀 Project Structure
 Inside my Astro project, you'll see the following folders and files:
-
 
 ```
 /
@@ -54,7 +51,7 @@ Inside my Astro project, you'll see the following folders and files:
 ```
 
 
-## 🧞 How i make this project
+# 🧞 How i make this project
 > Characteristics of this project 
 
 | Characteristic            | Description                                      |
@@ -63,9 +60,9 @@ Inside my Astro project, you'll see the following folders and files:
 | `routing`                 | Astro includes it's own `routing` api based on folder structure |
 | `SEO`                     | All `SEO` and `OG:` structure is based on [Coding In Public](https://www.youtube.com/@CodinginPublic/) scripts. He is one of many Astro project's "embassador", I highly recommend to follow him |
 
+<br>
 
-## 🤓 Want to learn more?
-
+# 🤓 Want to learn more?
 Look at the official [Documentation](https://docs.astro.build) 
 
 Get into the [Discord Server](https://astro.build/chat), people are very active there.
