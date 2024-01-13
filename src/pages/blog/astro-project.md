@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: My First Astro Proyect
+title: My First Astro Project
 date: 2023-09-03T03:00:00.000Z
 author: Joaquin Reynoso
 image: /images/astro.png
