@@ -12,23 +12,23 @@ importers:
         specifier: ^0.17.3
         version: 0.17.3(astro@2.10.15(@types/node@20.17.11)(sass@1.83.0))
       astro:
-        specifier: ^2.10.14
+        specifier: ^2.10.15
         version: 2.10.15(@types/node@20.17.11)(sass@1.83.0)
       astro-icon:
-        specifier: ^0.8.1
+        specifier: ^0.8.2
         version: 0.8.2
       sass:
-        specifier: ^1.66.1
+        specifier: ^1.83.0
         version: 1.83.0
       tinacms:
-        specifier: ^1.5.27
+        specifier: ^1.6.7
         version: 1.6.7(@babel/core@7.26.0)(@babel/template@7.25.9)(@types/react@19.0.2)(abstract-level@1.0.4)(jotai-optics@0.3.2(jotai@2.11.0(@types/react@19.0.2)(react@18.3.1))(optics-ts@2.4.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(sucrase@3.35.0)(typescript@5.7.2)
     devDependencies:
       '@tinacms/cli':
-        specifier: ^1.5.37
+        specifier: ^1.7.0
         version: 1.7.0(@codemirror/language@6.0.0)(@types/node@20.17.11)(@types/react@19.0.2)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@3.29.5)(sass@1.83.0)(scheduler@0.23.2)(sucrase@3.35.0)
       '@types/node':
-        specifier: ^20.10.0
+        specifier: ^20.17.11
         version: 20.17.11
 
 packages:
@@ -4630,9 +4630,6 @@ packages:
 
   micromark-util-character@1.1.0:
     resolution: {integrity: sha512-agJ5B3unGNJ9rJvADMJ5ZiYjBRyDpzKAOk01Kpi1TKhlT1APx3XZk6eN7RtSz1erbWHC2L8T3xLZ81wdtGRZzg==}
-
-  micromark-util-character@1.2.0:
-    resolution: {integrity: sha512-lXraTwcX3yH/vMDaFWCQJP1uIszLVebzUa3ZHdrgxr7KEU/9mL4mVgCpGbyhvNLNlauROiNUq7WN5u7ndbY6xg==}
 
   micromark-util-character@2.1.1:
     resolution: {integrity: sha512-wv8tdUTJ3thSFFFJKtpYKOYiGP2+v96Hvk4Tu8KpCAsTMs6yi+nVmGh1syvSCsaxz45J6Jbw+9DD6g97+NV67Q==}
@@ -12792,11 +12789,6 @@ snapshots:
       micromark-util-symbol: 1.0.1
       micromark-util-types: 1.0.2
 
-  micromark-util-character@1.2.0:
-    dependencies:
-      micromark-util-symbol: 1.1.0
-      micromark-util-types: 1.1.0
-
   micromark-util-character@2.1.1:
     dependencies:
       micromark-util-symbol: 2.0.1
@@ -12855,9 +12847,9 @@ snapshots:
 
   micromark-util-sanitize-uri@1.2.0:
     dependencies:
-      micromark-util-character: 1.2.0
+      micromark-util-character: 1.1.0
       micromark-util-encode: 1.1.0
-      micromark-util-symbol: 1.1.0
+      micromark-util-symbol: 1.0.1
 
   micromark-util-sanitize-uri@2.0.1:
     dependencies:
